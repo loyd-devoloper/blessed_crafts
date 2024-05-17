@@ -1,6 +1,7 @@
 <?php
 
 use App\Livewire\Customer\Homepage;
+use App\Livewire\Product\View;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,3 +16,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/',Homepage::class)->name('home');
+Route::get('/product/{name}',View::class)->name('product.view');
+
